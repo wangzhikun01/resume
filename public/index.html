@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>jianli</title>
+  <script>
+    // 在页面初始化时，设置HTML下的font-size，
+    // 1 rem = 1/24,如果屏幕超大时，设置1 rem 最大 == 40 px
+    let global_font_size = window.innerWidth/24;
+    global_font_size = (global_font_size>40)?40:global_font_size;
+    document.documentElement.style.fontSize = global_font_size+'px'
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but jianli doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

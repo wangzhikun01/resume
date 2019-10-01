@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1368508",
+      "name": "连接",
+      "font_class": "lianjie",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4460483",
+      "name": "向上",
+      "font_class": "xiangshang",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "7504193",
+      "name": "向左",
+      "font_class": "xiangzuoyuanjiantouzuojiantouxiangzuoxianxing",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "9751773",
+      "name": "向左",
+      "font_class": "xiangzuoyuanjiantouzuojiantouxiangzuoxianxing1",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "9879462",
+      "name": "向下",
+      "font_class": "xiangxia",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "9879493",
+      "name": "向上",
+      "font_class": "xiangshang1",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "10538403",
+      "name": "上传 向上 箭头",
+      "font_class": "shangchuanxiangshangjiantou",
+      "unicode": "e56f",
+      "unicode_decimal": 58735
+    }
+  ]
+}
