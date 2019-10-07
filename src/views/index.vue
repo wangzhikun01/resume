@@ -36,7 +36,7 @@ export default {
   text-align: center;
 }
 .info {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
   position: relative;
 }

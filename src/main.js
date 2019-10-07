@@ -2,6 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import { Swipe, SwipeItem } from 'vant';
+
+Vue.use(Swipe).use(SwipeItem);
+import "../node_modules/vant/lib/index.css";
 
 import "./assets/reset.css";/* reset样式 */
 import "./assets/font/iconfont.css";  /* 字体样式 */
@@ -16,7 +20,7 @@ import "./assets/font/iconfont.css";  /* 字体样式 */
 */
 
 Vue.config.productionTip = false
-
+// Vue.use()
 new Vue({
   router,
   store,

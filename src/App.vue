@@ -33,7 +33,7 @@ export default {
         } else {
           this.prePage();
         }
-      }, 300);
+      }, 150);
     },
     prePage() {
       // 上一页
@@ -62,7 +62,7 @@ export default {
 }
 .head-nav {
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   z-index: 100;
   width: 100%;
 }
@@ -74,12 +74,12 @@ export default {
   width: 100%;
   z-index: 10; /* 在图层的下面*/
   box-sizing: border-box;
-  padding-top: 4.5rem;
+  padding-top: 4rem;
   transition:all 1s;
 }
 .foot-btn {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   z-index: 100;
   width: 100%;
 }
