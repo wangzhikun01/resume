@@ -1,5 +1,5 @@
 <template>
-  <div id="app" @wheel="changePage">
+  <div id="app" @wheel="changePage" @touchend="touch_end" @touchstart="touch_start">
     <head-nav class="head-nav"></head-nav>
     <router-view class="main" />
     <foot-btn class="foot-btn" ref="foot" v-show="current!='contact'"></foot-btn>
@@ -14,7 +14,9 @@ export default {
   data() {
     return {
       wheelTimer: 0, // 定时器
-      current: "" //当前路由名字
+      current: "", //当前路由名字,
+      touchStart: 0,
+      touchEnd: 0 // 手指滑动的开始和结束位置
     };
   },
   components: {
@@ -44,6 +46,23 @@ export default {
         // 有下一页
         this.$router.push(link);
       }
+    },
+    touch_end(e) {
+      this.touchEnd = e.changedTouches[0].clientY;
+      // console.log(this.touchStart, this.touchEnd);
+      clearTimeout(this.wheelTimer);
+      this.wheelTimer = setTimeout(() => {
+        if (this.touchStart - this.touchEnd > 0) {
+          // 开始比结束大，说明向上滑动了，则展示下一页
+          this.$refs.foot.nextPage();
+        } else if (this.touchStart - this.touchEnd < 0) {
+          // 上一页
+          this.prePage();
+        }
+      }, 150);
+    },
+    touch_start(e) {
+      this.touchStart = e.touches[0].clientY;
     }
   },
   created() {
@@ -75,7 +94,7 @@ export default {
   z-index: 10; /* 在图层的下面*/
   box-sizing: border-box;
   padding-top: 4rem;
-  transition:all 1s;
+  transition: all 1s;
 }
 .foot-btn {
   position: absolute;
