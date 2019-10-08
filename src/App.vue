@@ -52,10 +52,10 @@ export default {
       // console.log(this.touchStart, this.touchEnd);
       clearTimeout(this.wheelTimer);
       this.wheelTimer = setTimeout(() => {
-        if (this.touchStart - this.touchEnd > 0) {
+        if (this.touchStart - this.touchEnd > 50) {
           // 开始比结束大，说明向上滑动了，则展示下一页
           this.$refs.foot.nextPage();
-        } else if (this.touchStart - this.touchEnd < 0) {
+        } else if (this.touchStart - this.touchEnd < -50) {
           // 上一页
           this.prePage();
         }

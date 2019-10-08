@@ -11,11 +11,11 @@
           <li>离职</li>
         </ul>
       </div>
-      <div class="slogon">遂-古-之-初 ， 谁-传-道-之 ？ 唯-坚-唯-强 ， 无-知-有-知 。</div>
+      <div class="slogon">遂古之初 ， 谁传道之 ？ 唯坚唯强 ， 无知有知 。</div>
       <div class="msg-list">
-        <p>我叫你大爷</p>
-        <p>共和国勋章获得者</p>
-        <p>110@139.com</p>
+        <p>王志坤</p>
+        <p>字节跳动广告部测试开发</p>
+        <p>zhikun110@gmail.com</p>
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@
 export default {
   data() {
     return {
-      imgSrc: require("../assets/index/me.jpg")
+      imgSrc: require("../assets/index/me2.jpg")
     };
   }
 };
