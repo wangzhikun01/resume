@@ -1,0 +1,77 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#e3e9f8;
+    transition:all 3s;
+}
+/* 页面整体容器样式 */
+.container{
+    width: 900px;
+    background-color:white;
+    margin:auto;
+    box-shadow: 0 0 10px 2px gray;
+}
+/* 分割条 */
+.bar{
+    height: 1px;
+    opacity: .5;
+    width: 850px;
+    margin:5px auto;
+    background-color: chartreuse;
+    transition:all 1.5s;
+}
+
+/* 简介区域 */
+.desc{
+    display:flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.desc>.left,.right{
+    flex:1;
+    height: 260px;
+}
+.desc>.left{
+    background-image: url(./static/me01.jpg);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+.desc>.right{
+    box-sizing: border-box;
+    padding:25px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.desc>.right>.item{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    padding:10px 0 10px 20px;
+    border-radius: 5px;
+    background-color: #f1f8ff;
+    transition: all .5s;
+}
+.desc>.right>.item:hover{
+    background-color: #4dd66d;
+}
+
+/* 技能预览区域 */
+.skill-pre{
+    display:flex;
+    flex-wrap: nowrap;
+    padding:0 30px;
+}
+.skill-pre>.left,.right{
+    height: auto;
+}
+.skill-pre>.left{
+    width: 60%;
+}
+.skill-pre>.right{
+    width: 40%;
+}
